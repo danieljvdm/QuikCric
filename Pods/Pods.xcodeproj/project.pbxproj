@@ -1,0 +1,1207 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00563B43DF4B6371E64BFBC17B3B0609 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A85D5894C3A57E639310870388238 /* Response.swift */; };
+		0BB9450344C2B118E98470CF4D93BAC3 /* Pods-QuikCric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8BED93C26598BBDA01A46EE16287D /* Pods-QuikCric-dummy.m */; };
+		0D426E5353363FE7094F8492A6B71059 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B71CE0AB6A44FBDF2A3632E384E23 /* MultipartFormData.swift */; };
+		0E122A2B855B577C370B42D74D33CE07 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA24BA30C56A95087CB5210E1A38033 /* Manager.swift */; };
+		10D86709C6C46DF1C694E8CCEE1E925A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EAAC3811C534A7DE1DCD1BD66F33AD /* Foundation.framework */; };
+		10DD4AD67160D3F149F84625555E5A2E /* Pods-QuikCric WatchKit Extension-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C434DE224DC705A5FF4B3E11DE2743 /* Pods-QuikCric WatchKit Extension-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11565F162C1079915C35FFE1871E08DD /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2909CDD32DFC5E194DFD9FE658CB7CB /* Stream.swift */; };
+		11CA08665DC339B54FC233A601274CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EAAC3811C534A7DE1DCD1BD66F33AD /* Foundation.framework */; };
+		1AEF744BC23DC9CE16FD06525CDA4772 /* Pods-QuikCric-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5FB237C532E0326883AA4CC4CAB83F2 /* Pods-QuikCric-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DD519D80917D26005CB40CE652272C6 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B74B9A3FB1B6D328D2D70757A98DF /* Download.swift */; };
+		2779E572E8940CBF398E070249E9B5E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB75D93F2262D06C8560CC32F3C3A559 /* Foundation.framework */; };
+		2DAB98CA45DB2F2A1072706C46AB31FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB75D93F2262D06C8560CC32F3C3A559 /* Foundation.framework */; };
+		368EC08042DDDB63F3CFC6F41571873C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69639654F360A7A366B186C9B4C74765 /* ParameterEncoding.swift */; };
+		3E0DAF3E5C508C1C83022907E6128BE9 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F3DCD12A9B4994C83B321F2B3A221 /* ServerTrustPolicy.swift */; };
+		409B90311F357FB9D294772274DBCDF5 /* Pods-QuikCric WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6853D7E22EA42A9DF23BE940BA6EBEA1 /* Pods-QuikCric WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41F5FE62C12EFD76FB1A19F3988BF88B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF419875A6348D466F6A5522712742F /* Request.swift */; };
+		48CD5836D540B468D2D17963FB47C518 /* Pods-QuikCric WatchKit Extension-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F9ADC439F0917FBE42B4B047DFE45 /* Pods-QuikCric WatchKit Extension-Alamofire-dummy.m */; };
+		56ECEFA4F4A8CD255933A0A7D14EC0EA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF419875A6348D466F6A5522712742F /* Request.swift */; };
+		5CB79BEAE7C55612A952E942A85B7F6E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D221EF9C830E9F8180E78B4B22805DC /* ResponseSerialization.swift */; };
+		5D41F0BDBB9D3863F1E3CFFFB0172D9A /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A57DDF96D9E3C8FCD1A9C0848E16 /* Upload.swift */; };
+		5D8305BB01622E279495F38E445B30CC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413B71CE0AB6A44FBDF2A3632E384E23 /* MultipartFormData.swift */; };
+		6271EB26707210FD6C918AA96A73F634 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D12DCE2E853326911C38CC3038F7C7 /* SwiftyJSON.swift */; };
+		66E98C84E10B3AA7C68BFBD0872E7620 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D12DCE2E853326911C38CC3038F7C7 /* SwiftyJSON.swift */; };
+		67B9A95D50EC5B47294EAE9D06565122 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E255655558BBE37F864F8630863BF6 /* Validation.swift */; };
+		719F4C2D6FB672246759B4E02877083B /* Pods-QuikCric WatchKit Extension-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BD0B22F1F37DD2BCB05C9B7A87EC9 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-dummy.m */; };
+		71CB027A5BD3AEFA1A781C0C435E2CED /* Pods-QuikCric-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA87071F9BDC65261B78128BB14D0F1E /* Pods-QuikCric-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74029EF23D519B8618880633CD99832B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0949A5FC62E13C1CA7114A491E480D6 /* Error.swift */; };
+		77594825CF392646ADF09E027CC5D2F0 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34A57DDF96D9E3C8FCD1A9C0848E16 /* Upload.swift */; };
+		77FD9142B429018987FD808516FC6A43 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB195CE4D48AB8E2DC617954F5BAE72 /* Result.swift */; };
+		7D957C13115FE061DC3FA9B03760D74D /* Pods-QuikCric-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A71CFD7AE0DD2905FA95A5A35F29259F /* Pods-QuikCric-Alamofire-dummy.m */; };
+		8E77E9CFD598BDFEED86E507745C9878 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A85D5894C3A57E639310870388238 /* Response.swift */; };
+		9328903D24D71DCB4FC26B38C3841526 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69639654F360A7A366B186C9B4C74765 /* ParameterEncoding.swift */; };
+		9962DA1F28C130F2B24DCDD88DA2E5A2 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D221EF9C830E9F8180E78B4B22805DC /* ResponseSerialization.swift */; };
+		A9140A36292F8F2922AF408D10CBF4FA /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F3DCD12A9B4994C83B321F2B3A221 /* ServerTrustPolicy.swift */; };
+		AADE814EE972555DC9C18958FEE0123C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EAAC3811C534A7DE1DCD1BD66F33AD /* Foundation.framework */; };
+		ABCD256B511431C6034B35CC536DD1C4 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B74B9A3FB1B6D328D2D70757A98DF /* Download.swift */; };
+		B600E86FDEF394EA6B6D67A909CD4815 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6434522DEBBD3E2338BA0F4F23D6F616 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA78BBA945EC9FB977FDE86E0AFEB7D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB75D93F2262D06C8560CC32F3C3A559 /* Foundation.framework */; };
+		BEF7369FCD5C3A0C6148AB16B4721089 /* Pods-QuikCric WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D71B2415FD638DB67FE3A147CB84A4 /* Pods-QuikCric WatchKit Extension-dummy.m */; };
+		CFE8660E743D4B2BA9E86A81E6AD2016 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3D2B7C025695EFBE3B58E3C74761B /* Alamofire.swift */; };
+		D08626C0C18DEB5F17298CA4EE3499DD /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2909CDD32DFC5E194DFD9FE658CB7CB /* Stream.swift */; };
+		D3862FA5CDF6F61E052B65EEC671E86F /* Pods-QuikCric-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AC3111824D026F1D9F84C0FE4FB251 /* Pods-QuikCric-SwiftyJSON-dummy.m */; };
+		E6D499C9C674C94114F5ABE4FDDEC07D /* Pods-QuikCric-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9224DC61AC3DE40532602F220A4F683 /* Pods-QuikCric-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC833A821C1A5D66D13D766DD28AC315 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3D2B7C025695EFBE3B58E3C74761B /* Alamofire.swift */; };
+		EFE0BEC81AC619F3EAE4594381467375 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E255655558BBE37F864F8630863BF6 /* Validation.swift */; };
+		F35440579201757AD0A256CCCD6395F6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0949A5FC62E13C1CA7114A491E480D6 /* Error.swift */; };
+		FA11AF560A2068D7005F1CAA138672FA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB195CE4D48AB8E2DC617954F5BAE72 /* Result.swift */; };
+		FDA6C330DA371524AFF7A33AFFE05657 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA24BA30C56A95087CB5210E1A38033 /* Manager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C6E089EA820117C110483D91BBB82E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD0D2CD7FCAA1707BDDA0E21E5E61EFC;
+			remoteInfo = "Pods-QuikCric WatchKit Extension-Alamofire";
+		};
+		3F1D3D4B953218CFCC39165745044840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FB29DCCD32C362F5DB041411CA9CF4A;
+			remoteInfo = "Pods-QuikCric WatchKit Extension-SwiftyJSON";
+		};
+		6123E35B89CB9F894C2AA8BD19860FC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62C1BFDE071A0035247A39837FA8FD8C;
+			remoteInfo = "Pods-QuikCric-Alamofire";
+		};
+		A318214571863E74BA68090AC7482CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DC95FDFAAEC131DC118C57846BA9C7;
+			remoteInfo = "Pods-QuikCric-SwiftyJSON";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E255655558BBE37F864F8630863BF6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		07D58657A52FF5AF73CBF71A988414F4 /* Pods-QuikCric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuikCric.debug.xcconfig"; sourceTree = "<group>"; };
+		0CA3D2B7C025695EFBE3B58E3C74761B /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		10BF3416F3C301AF4C3D0C5DA0BE087B /* Pods-QuikCric WatchKit Extension-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuikCric WatchKit Extension-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		150946AA3B100BB5C800F9F64B4901C4 /* Pods-QuikCric WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuikCric WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		1575F335F0104243271B357D8083DD65 /* Pods-QuikCric-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuikCric-SwiftyJSON.xcconfig"; path = "../Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		18116EC7AAE3A1647EDF829AFF7E3BCC /* Pods-QuikCric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuikCric.release.xcconfig"; sourceTree = "<group>"; };
+		2245B4CCB898181EE32AC49D0FCC82C8 /* Pods-QuikCric-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuikCric-Alamofire.xcconfig"; path = "../Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		276F9ADC439F0917FBE42B4B047DFE45 /* Pods-QuikCric WatchKit Extension-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuikCric WatchKit Extension-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		2B11769E5E864245EECE72FA814BDFC1 /* Pods-QuikCric WatchKit Extension-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuikCric WatchKit Extension-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		2CA1DB5D65678B99EADF2C3F1534C064 /* Pods-QuikCric WatchKit Extension-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuikCric WatchKit Extension-Alamofire.modulemap"; sourceTree = "<group>"; };
+		313B74B9A3FB1B6D328D2D70757A98DF /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		35C434DE224DC705A5FF4B3E11DE2743 /* Pods-QuikCric WatchKit Extension-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuikCric WatchKit Extension-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		3D221EF9C830E9F8180E78B4B22805DC /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		413B71CE0AB6A44FBDF2A3632E384E23 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		4B82B6DA97DA42FCEB7463A64C7BAAF0 /* Pods-QuikCric-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-QuikCric-Alamofire.modulemap"; path = "../Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire.modulemap"; sourceTree = "<group>"; };
+		4C9BD0B22F1F37DD2BCB05C9B7A87EC9 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuikCric WatchKit Extension-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		4F5E3BDB0A86878C30F0A48C8AB33799 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuikCric WatchKit Extension-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		538A7AE820A9E23B7EAB86A421F86BE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57BC74C386F1C4C2B9FCC0E792F5D3A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		617F9F3B8826ABC7B1104C717481D0DD /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639BC26F672E8D95BDCD39FADDAFFB88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6434522DEBBD3E2338BA0F4F23D6F616 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuikCric WatchKit Extension-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		6853D7E22EA42A9DF23BE940BA6EBEA1 /* Pods-QuikCric WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuikCric WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		69639654F360A7A366B186C9B4C74765 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		7517C5D10E6E141BF1B65729A16B8DDD /* Pods-QuikCric-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuikCric-resources.sh"; sourceTree = "<group>"; };
+		75EAAC3811C534A7DE1DCD1BD66F33AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A22CEAA610FC098EB52922E522B84A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-QuikCric-Alamofire/Info.plist"; sourceTree = "<group>"; };
+		7DE114DB4E152DDC25D8C76B1BBC5189 /* Pods-QuikCric WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuikCric WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E26B6688F90F82E4FF8508F6BA9F2F7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC8BED93C26598BBDA01A46EE16287D /* Pods-QuikCric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuikCric-dummy.m"; sourceTree = "<group>"; };
+		804F3DCD12A9B4994C83B321F2B3A221 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8A6FE62262DD5BA6443F6F47E309E361 /* Pods_QuikCric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuikCric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97617CCEF4C90E96696E873C9BD03147 /* Pods-QuikCric WatchKit Extension-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuikCric WatchKit Extension-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		A71CFD7AE0DD2905FA95A5A35F29259F /* Pods-QuikCric-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-QuikCric-Alamofire-dummy.m"; path = "../Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		AB556BBF003688301B093AF1E4C1E352 /* Pods-QuikCric-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QuikCric-Alamofire-prefix.pch"; path = "../Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		AD183A64725890E2911138584A964383 /* Pods-QuikCric-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuikCric-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AFFF24055CD380BD4E97F329BAA2F53F /* Pods-QuikCric WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuikCric WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAA24BA30C56A95087CB5210E1A38033 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		BBF419875A6348D466F6A5522712742F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		C3183367CFB4F3CAA9E986ED7054D1FF /* Pods-QuikCric WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuikCric WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		C9224DC61AC3DE40532602F220A4F683 /* Pods-QuikCric-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QuikCric-SwiftyJSON-umbrella.h"; path = "../Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		CB75D93F2262D06C8560CC32F3C3A559 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE34A57DDF96D9E3C8FCD1A9C0848E16 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		CF41A74BAE7D647CD5BFD266E190DD84 /* Pods-QuikCric-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuikCric-frameworks.sh"; sourceTree = "<group>"; };
+		D0949A5FC62E13C1CA7114A491E480D6 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		D0D12DCE2E853326911C38CC3038F7C7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		D11EA5A50541F7860C9A1447CB9BBD0A /* Pods-QuikCric WatchKit Extension-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuikCric WatchKit Extension-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		D2909CDD32DFC5E194DFD9FE658CB7CB /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		D43049E73561435464983D4E54B7D99A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A4AB27DAFED57850A244D839586C28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78D49968BAEC691F075DA4CBE197D47 /* Pods_QuikCric_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuikCric_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BCF1A15162B81FB8D1418A7AC62AE7 /* Pods-QuikCric-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuikCric-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8E83995AAE488D43FC97D50370D41D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-QuikCric-SwiftyJSON/Info.plist"; sourceTree = "<group>"; };
+		DC9A9D2FDF621680E54D0F3EA4F1664D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D71B2415FD638DB67FE3A147CB84A4 /* Pods-QuikCric WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuikCric WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		E5FB237C532E0326883AA4CC4CAB83F2 /* Pods-QuikCric-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QuikCric-Alamofire-umbrella.h"; path = "../Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		E64379D7CD654E70B65F93AA9ED1E662 /* Pods-QuikCric WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuikCric WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		E6D385D2EB73B396645B50A7449F4AEB /* Pods-QuikCric.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuikCric.modulemap"; sourceTree = "<group>"; };
+		E96DA96F02A1855CDA3302308FD867C3 /* Pods-QuikCric WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuikCric WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		EA87071F9BDC65261B78128BB14D0F1E /* Pods-QuikCric-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuikCric-umbrella.h"; sourceTree = "<group>"; };
+		EC5B4200D9E53220AD733842DF5C903F /* Pods-QuikCric-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-QuikCric-SwiftyJSON.modulemap"; path = "../Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		EE1A85D5894C3A57E639310870388238 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		EEB195CE4D48AB8E2DC617954F5BAE72 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		F2AC3111824D026F1D9F84C0FE4FB251 /* Pods-QuikCric-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-QuikCric-SwiftyJSON-dummy.m"; path = "../Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		FC1A8D72F07BCD9E5214B7D5CBCB3657 /* Pods-QuikCric-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QuikCric-SwiftyJSON-prefix.pch"; path = "../Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		FE03DC3B1B6DD4EF557F89D87782DFDA /* Pods-QuikCric WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuikCric WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041DBF09EC739F3BD0106554913AF532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAB98CA45DB2F2A1072706C46AB31FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AA5CA98D80D6C05920E8149E93DF95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2779E572E8940CBF398E070249E9B5E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AF30A32AE04CAA02BD9E8170FAB463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CA08665DC339B54FC233A601274CF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34BF9E4EE74DE755F416EA52DF29F633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADE814EE972555DC9C18958FEE0123C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA8EC2772B8850A4ACFA138299491AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA78BBA945EC9FB977FDE86E0AFEB7D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75D7EDF98D9152178AAF56DA2645DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D86709C6C46DF1C694E8CCEE1E925A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E56501765872C7AF978293284861215 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB75D93F2262D06C8560CC32F3C3A559 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		552FC40BDD0C8B3B3C10E6FF3AB043EA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7EC52C9C54A833E639E2A9A7B0D56 /* Pods-QuikCric */,
+				BE062C22C7E16AE9AF679283080AB064 /* Pods-QuikCric WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		56F4B04162E6D98C376395A0FBD5B316 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3D2B7C025695EFBE3B58E3C74761B /* Alamofire.swift */,
+				313B74B9A3FB1B6D328D2D70757A98DF /* Download.swift */,
+				D0949A5FC62E13C1CA7114A491E480D6 /* Error.swift */,
+				BAA24BA30C56A95087CB5210E1A38033 /* Manager.swift */,
+				413B71CE0AB6A44FBDF2A3632E384E23 /* MultipartFormData.swift */,
+				69639654F360A7A366B186C9B4C74765 /* ParameterEncoding.swift */,
+				BBF419875A6348D466F6A5522712742F /* Request.swift */,
+				EE1A85D5894C3A57E639310870388238 /* Response.swift */,
+				3D221EF9C830E9F8180E78B4B22805DC /* ResponseSerialization.swift */,
+				EEB195CE4D48AB8E2DC617954F5BAE72 /* Result.swift */,
+				804F3DCD12A9B4994C83B321F2B3A221 /* ServerTrustPolicy.swift */,
+				D2909CDD32DFC5E194DFD9FE658CB7CB /* Stream.swift */,
+				CE34A57DDF96D9E3C8FCD1A9C0848E16 /* Upload.swift */,
+				01E255655558BBE37F864F8630863BF6 /* Validation.swift */,
+				76DC01CF8AF65B235C724D1BB73A9734 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		76DC01CF8AF65B235C724D1BB73A9734 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A22CEAA610FC098EB52922E522B84A2 /* Info.plist */,
+				639BC26F672E8D95BDCD39FADDAFFB88 /* Info.plist */,
+				2CA1DB5D65678B99EADF2C3F1534C064 /* Pods-QuikCric WatchKit Extension-Alamofire.modulemap */,
+				D11EA5A50541F7860C9A1447CB9BBD0A /* Pods-QuikCric WatchKit Extension-Alamofire.xcconfig */,
+				276F9ADC439F0917FBE42B4B047DFE45 /* Pods-QuikCric WatchKit Extension-Alamofire-dummy.m */,
+				10BF3416F3C301AF4C3D0C5DA0BE087B /* Pods-QuikCric WatchKit Extension-Alamofire-prefix.pch */,
+				35C434DE224DC705A5FF4B3E11DE2743 /* Pods-QuikCric WatchKit Extension-Alamofire-umbrella.h */,
+				4B82B6DA97DA42FCEB7463A64C7BAAF0 /* Pods-QuikCric-Alamofire.modulemap */,
+				2245B4CCB898181EE32AC49D0FCC82C8 /* Pods-QuikCric-Alamofire.xcconfig */,
+				A71CFD7AE0DD2905FA95A5A35F29259F /* Pods-QuikCric-Alamofire-dummy.m */,
+				AB556BBF003688301B093AF1E4C1E352 /* Pods-QuikCric-Alamofire-prefix.pch */,
+				E5FB237C532E0326883AA4CC4CAB83F2 /* Pods-QuikCric-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				B2522FB691E54C400C1D43FC522FD586 /* Pods */,
+				916EC45E0D8011A83B22064871B85B2D /* Products */,
+				552FC40BDD0C8B3B3C10E6FF3AB043EA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91108B74F31481B44070C2CEA4D90048 /* iOS */,
+				2E56501765872C7AF978293284861215 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91108B74F31481B44070C2CEA4D90048 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				75EAAC3811C534A7DE1DCD1BD66F33AD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		916EC45E0D8011A83B22064871B85B2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A9D2FDF621680E54D0F3EA4F1664D /* Alamofire.framework */,
+				D43049E73561435464983D4E54B7D99A /* Alamofire.framework */,
+				8A6FE62262DD5BA6443F6F47E309E361 /* Pods_QuikCric.framework */,
+				D78D49968BAEC691F075DA4CBE197D47 /* Pods_QuikCric_WatchKit_Extension.framework */,
+				7E26B6688F90F82E4FF8508F6BA9F2F7 /* SwiftyJSON.framework */,
+				617F9F3B8826ABC7B1104C717481D0DD /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A11EB6E7A9D16E39BFE0CF1A2BB2289E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8E83995AAE488D43FC97D50370D41D5 /* Info.plist */,
+				538A7AE820A9E23B7EAB86A421F86BE6 /* Info.plist */,
+				97617CCEF4C90E96696E873C9BD03147 /* Pods-QuikCric WatchKit Extension-SwiftyJSON.modulemap */,
+				2B11769E5E864245EECE72FA814BDFC1 /* Pods-QuikCric WatchKit Extension-SwiftyJSON.xcconfig */,
+				4C9BD0B22F1F37DD2BCB05C9B7A87EC9 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-dummy.m */,
+				4F5E3BDB0A86878C30F0A48C8AB33799 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-prefix.pch */,
+				6434522DEBBD3E2338BA0F4F23D6F616 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-umbrella.h */,
+				EC5B4200D9E53220AD733842DF5C903F /* Pods-QuikCric-SwiftyJSON.modulemap */,
+				1575F335F0104243271B357D8083DD65 /* Pods-QuikCric-SwiftyJSON.xcconfig */,
+				F2AC3111824D026F1D9F84C0FE4FB251 /* Pods-QuikCric-SwiftyJSON-dummy.m */,
+				FC1A8D72F07BCD9E5214B7D5CBCB3657 /* Pods-QuikCric-SwiftyJSON-prefix.pch */,
+				C9224DC61AC3DE40532602F220A4F683 /* Pods-QuikCric-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		A9A7EC52C9C54A833E639E2A9A7B0D56 /* Pods-QuikCric */ = {
+			isa = PBXGroup;
+			children = (
+				57BC74C386F1C4C2B9FCC0E792F5D3A9 /* Info.plist */,
+				E6D385D2EB73B396645B50A7449F4AEB /* Pods-QuikCric.modulemap */,
+				AD183A64725890E2911138584A964383 /* Pods-QuikCric-acknowledgements.markdown */,
+				D7BCF1A15162B81FB8D1418A7AC62AE7 /* Pods-QuikCric-acknowledgements.plist */,
+				7EC8BED93C26598BBDA01A46EE16287D /* Pods-QuikCric-dummy.m */,
+				CF41A74BAE7D647CD5BFD266E190DD84 /* Pods-QuikCric-frameworks.sh */,
+				7517C5D10E6E141BF1B65729A16B8DDD /* Pods-QuikCric-resources.sh */,
+				EA87071F9BDC65261B78128BB14D0F1E /* Pods-QuikCric-umbrella.h */,
+				07D58657A52FF5AF73CBF71A988414F4 /* Pods-QuikCric.debug.xcconfig */,
+				18116EC7AAE3A1647EDF829AFF7E3BCC /* Pods-QuikCric.release.xcconfig */,
+			);
+			name = "Pods-QuikCric";
+			path = "Target Support Files/Pods-QuikCric";
+			sourceTree = "<group>";
+		};
+		B2522FB691E54C400C1D43FC522FD586 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56F4B04162E6D98C376395A0FBD5B316 /* Alamofire */,
+				C5896620BF59833889F6EEE2542C627E /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE062C22C7E16AE9AF679283080AB064 /* Pods-QuikCric WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4A4AB27DAFED57850A244D839586C28 /* Info.plist */,
+				E64379D7CD654E70B65F93AA9ED1E662 /* Pods-QuikCric WatchKit Extension.modulemap */,
+				7DE114DB4E152DDC25D8C76B1BBC5189 /* Pods-QuikCric WatchKit Extension-acknowledgements.markdown */,
+				FE03DC3B1B6DD4EF557F89D87782DFDA /* Pods-QuikCric WatchKit Extension-acknowledgements.plist */,
+				E0D71B2415FD638DB67FE3A147CB84A4 /* Pods-QuikCric WatchKit Extension-dummy.m */,
+				E96DA96F02A1855CDA3302308FD867C3 /* Pods-QuikCric WatchKit Extension-frameworks.sh */,
+				C3183367CFB4F3CAA9E986ED7054D1FF /* Pods-QuikCric WatchKit Extension-resources.sh */,
+				6853D7E22EA42A9DF23BE940BA6EBEA1 /* Pods-QuikCric WatchKit Extension-umbrella.h */,
+				AFFF24055CD380BD4E97F329BAA2F53F /* Pods-QuikCric WatchKit Extension.debug.xcconfig */,
+				150946AA3B100BB5C800F9F64B4901C4 /* Pods-QuikCric WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-QuikCric WatchKit Extension";
+			path = "Target Support Files/Pods-QuikCric WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C5896620BF59833889F6EEE2542C627E /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D0D12DCE2E853326911C38CC3038F7C7 /* SwiftyJSON.swift */,
+				A11EB6E7A9D16E39BFE0CF1A2BB2289E /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1726E62538CCFF5739C1BA7E09E08F2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B600E86FDEF394EA6B6D67A909CD4815 /* Pods-QuikCric WatchKit Extension-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2024376BC9F2C6871C3330B22EEE653E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEF744BC23DC9CE16FD06525CDA4772 /* Pods-QuikCric-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3AF5B32911E2508990803C3FF8F635 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DD4AD67160D3F149F84625555E5A2E /* Pods-QuikCric WatchKit Extension-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E66B43B42659A7852CFC870E654796 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B90311F357FB9D294772274DBCDF5 /* Pods-QuikCric WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFFFAE8775516B99FB1046A10C23C29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CB027A5BD3AEFA1A781C0C435E2CED /* Pods-QuikCric-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734A785B45557AB75438021E7984256 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D499C9C674C94114F5ABE4FDDEC07D /* Pods-QuikCric-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31DC95FDFAAEC131DC118C57846BA9C7 /* Pods-QuikCric-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A24937DF0B140A66F2D64DFFCF4147B /* Build configuration list for PBXNativeTarget "Pods-QuikCric-SwiftyJSON" */;
+			buildPhases = (
+				A425129C62DDCC2A7C38C8432B264CDD /* Sources */,
+				F75D7EDF98D9152178AAF56DA2645DFD /* Frameworks */,
+				B734A785B45557AB75438021E7984256 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QuikCric-SwiftyJSON";
+			productName = "Pods-QuikCric-SwiftyJSON";
+			productReference = 617F9F3B8826ABC7B1104C717481D0DD /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		62C1BFDE071A0035247A39837FA8FD8C /* Pods-QuikCric-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30874FF41A7D6AE56D648F2E990F0592 /* Build configuration list for PBXNativeTarget "Pods-QuikCric-Alamofire" */;
+			buildPhases = (
+				40E0FB3C038C214C5915CCFE36E15473 /* Sources */,
+				34BF9E4EE74DE755F416EA52DF29F633 /* Frameworks */,
+				2024376BC9F2C6871C3330B22EEE653E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QuikCric-Alamofire";
+			productName = "Pods-QuikCric-Alamofire";
+			productReference = D43049E73561435464983D4E54B7D99A /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FB29DCCD32C362F5DB041411CA9CF4A /* Pods-QuikCric WatchKit Extension-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7248CFE38A0A8BC400BC1F74F972B0DC /* Build configuration list for PBXNativeTarget "Pods-QuikCric WatchKit Extension-SwiftyJSON" */;
+			buildPhases = (
+				775C49AC1E88BCBCA23FE3CEFF050035 /* Sources */,
+				12AA5CA98D80D6C05920E8149E93DF95 /* Frameworks */,
+				1726E62538CCFF5739C1BA7E09E08F2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QuikCric WatchKit Extension-SwiftyJSON";
+			productName = "Pods-QuikCric WatchKit Extension-SwiftyJSON";
+			productReference = 7E26B6688F90F82E4FF8508F6BA9F2F7 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B48D0820FFE0AE786B9A9BFEC37CA81 /* Pods-QuikCric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B155A531EC0359F29E7ED1DCAF2BF8 /* Build configuration list for PBXNativeTarget "Pods-QuikCric" */;
+			buildPhases = (
+				8884B0D16D4B13E8043694B6C27C6820 /* Sources */,
+				16AF30A32AE04CAA02BD9E8170FAB463 /* Frameworks */,
+				9CFFFAE8775516B99FB1046A10C23C29 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9706A3EA650E8648633592E3F3E0209 /* PBXTargetDependency */,
+				2F66A8C93CE562B0284D9478E492FE33 /* PBXTargetDependency */,
+			);
+			name = "Pods-QuikCric";
+			productName = "Pods-QuikCric";
+			productReference = 8A6FE62262DD5BA6443F6F47E309E361 /* Pods_QuikCric.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD0D2CD7FCAA1707BDDA0E21E5E61EFC /* Pods-QuikCric WatchKit Extension-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF8706A9777987857BC285DCED4D5D7 /* Build configuration list for PBXNativeTarget "Pods-QuikCric WatchKit Extension-Alamofire" */;
+			buildPhases = (
+				08E55952B2A98FFE68E00E15275C9FFF /* Sources */,
+				8CA8EC2772B8850A4ACFA138299491AD /* Frameworks */,
+				2A3AF5B32911E2508990803C3FF8F635 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QuikCric WatchKit Extension-Alamofire";
+			productName = "Pods-QuikCric WatchKit Extension-Alamofire";
+			productReference = DC9A9D2FDF621680E54D0F3EA4F1664D /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBD621BD26E4CACF4DB46E11F1C17381 /* Pods-QuikCric WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1135A8FAF4AF4E53C65F703E10F6A5AD /* Build configuration list for PBXNativeTarget "Pods-QuikCric WatchKit Extension" */;
+			buildPhases = (
+				B4D93A7C4D8A2F07589EE2519960C941 /* Sources */,
+				041DBF09EC739F3BD0106554913AF532 /* Frameworks */,
+				32E66B43B42659A7852CFC870E654796 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				181B3F96E74FBA31E26E675C45D321D4 /* PBXTargetDependency */,
+				1482726E96BDE1B374F1E20E4EED625C /* PBXTargetDependency */,
+			);
+			name = "Pods-QuikCric WatchKit Extension";
+			productName = "Pods-QuikCric WatchKit Extension";
+			productReference = D78D49968BAEC691F075DA4CBE197D47 /* Pods_QuikCric_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 916EC45E0D8011A83B22064871B85B2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B48D0820FFE0AE786B9A9BFEC37CA81 /* Pods-QuikCric */,
+				BBD621BD26E4CACF4DB46E11F1C17381 /* Pods-QuikCric WatchKit Extension */,
+				AD0D2CD7FCAA1707BDDA0E21E5E61EFC /* Pods-QuikCric WatchKit Extension-Alamofire */,
+				6FB29DCCD32C362F5DB041411CA9CF4A /* Pods-QuikCric WatchKit Extension-SwiftyJSON */,
+				62C1BFDE071A0035247A39837FA8FD8C /* Pods-QuikCric-Alamofire */,
+				31DC95FDFAAEC131DC118C57846BA9C7 /* Pods-QuikCric-SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E55952B2A98FFE68E00E15275C9FFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC833A821C1A5D66D13D766DD28AC315 /* Alamofire.swift in Sources */,
+				ABCD256B511431C6034B35CC536DD1C4 /* Download.swift in Sources */,
+				74029EF23D519B8618880633CD99832B /* Error.swift in Sources */,
+				FDA6C330DA371524AFF7A33AFFE05657 /* Manager.swift in Sources */,
+				0D426E5353363FE7094F8492A6B71059 /* MultipartFormData.swift in Sources */,
+				9328903D24D71DCB4FC26B38C3841526 /* ParameterEncoding.swift in Sources */,
+				48CD5836D540B468D2D17963FB47C518 /* Pods-QuikCric WatchKit Extension-Alamofire-dummy.m in Sources */,
+				56ECEFA4F4A8CD255933A0A7D14EC0EA /* Request.swift in Sources */,
+				8E77E9CFD598BDFEED86E507745C9878 /* Response.swift in Sources */,
+				5CB79BEAE7C55612A952E942A85B7F6E /* ResponseSerialization.swift in Sources */,
+				77FD9142B429018987FD808516FC6A43 /* Result.swift in Sources */,
+				A9140A36292F8F2922AF408D10CBF4FA /* ServerTrustPolicy.swift in Sources */,
+				11565F162C1079915C35FFE1871E08DD /* Stream.swift in Sources */,
+				5D41F0BDBB9D3863F1E3CFFFB0172D9A /* Upload.swift in Sources */,
+				67B9A95D50EC5B47294EAE9D06565122 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E0FB3C038C214C5915CCFE36E15473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE8660E743D4B2BA9E86A81E6AD2016 /* Alamofire.swift in Sources */,
+				1DD519D80917D26005CB40CE652272C6 /* Download.swift in Sources */,
+				F35440579201757AD0A256CCCD6395F6 /* Error.swift in Sources */,
+				0E122A2B855B577C370B42D74D33CE07 /* Manager.swift in Sources */,
+				5D8305BB01622E279495F38E445B30CC /* MultipartFormData.swift in Sources */,
+				368EC08042DDDB63F3CFC6F41571873C /* ParameterEncoding.swift in Sources */,
+				7D957C13115FE061DC3FA9B03760D74D /* Pods-QuikCric-Alamofire-dummy.m in Sources */,
+				41F5FE62C12EFD76FB1A19F3988BF88B /* Request.swift in Sources */,
+				00563B43DF4B6371E64BFBC17B3B0609 /* Response.swift in Sources */,
+				9962DA1F28C130F2B24DCDD88DA2E5A2 /* ResponseSerialization.swift in Sources */,
+				FA11AF560A2068D7005F1CAA138672FA /* Result.swift in Sources */,
+				3E0DAF3E5C508C1C83022907E6128BE9 /* ServerTrustPolicy.swift in Sources */,
+				D08626C0C18DEB5F17298CA4EE3499DD /* Stream.swift in Sources */,
+				77594825CF392646ADF09E027CC5D2F0 /* Upload.swift in Sources */,
+				EFE0BEC81AC619F3EAE4594381467375 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775C49AC1E88BCBCA23FE3CEFF050035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719F4C2D6FB672246759B4E02877083B /* Pods-QuikCric WatchKit Extension-SwiftyJSON-dummy.m in Sources */,
+				66E98C84E10B3AA7C68BFBD0872E7620 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8884B0D16D4B13E8043694B6C27C6820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB9450344C2B118E98470CF4D93BAC3 /* Pods-QuikCric-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A425129C62DDCC2A7C38C8432B264CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3862FA5CDF6F61E052B65EEC671E86F /* Pods-QuikCric-SwiftyJSON-dummy.m in Sources */,
+				6271EB26707210FD6C918AA96A73F634 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D93A7C4D8A2F07589EE2519960C941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF7369FCD5C3A0C6148AB16B4721089 /* Pods-QuikCric WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1482726E96BDE1B374F1E20E4EED625C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QuikCric WatchKit Extension-SwiftyJSON";
+			target = 6FB29DCCD32C362F5DB041411CA9CF4A /* Pods-QuikCric WatchKit Extension-SwiftyJSON */;
+			targetProxy = 3F1D3D4B953218CFCC39165745044840 /* PBXContainerItemProxy */;
+		};
+		181B3F96E74FBA31E26E675C45D321D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QuikCric WatchKit Extension-Alamofire";
+			target = AD0D2CD7FCAA1707BDDA0E21E5E61EFC /* Pods-QuikCric WatchKit Extension-Alamofire */;
+			targetProxy = 2C6E089EA820117C110483D91BBB82E6 /* PBXContainerItemProxy */;
+		};
+		2F66A8C93CE562B0284D9478E492FE33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QuikCric-SwiftyJSON";
+			target = 31DC95FDFAAEC131DC118C57846BA9C7 /* Pods-QuikCric-SwiftyJSON */;
+			targetProxy = A318214571863E74BA68090AC7482CA6 /* PBXContainerItemProxy */;
+		};
+		D9706A3EA650E8648633592E3F3E0209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QuikCric-Alamofire";
+			target = 62C1BFDE071A0035247A39837FA8FD8C /* Pods-QuikCric-Alamofire */;
+			targetProxy = 6123E35B89CB9F894C2AA8BD19860FC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03FBC4FC31E8FB1DF64E8A29ED84F3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B11769E5E864245EECE72FA814BDFC1 /* Pods-QuikCric WatchKit Extension-SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON/Pods-QuikCric WatchKit Extension-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON/Pods-QuikCric WatchKit Extension-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0C935D4A540856040A57AA48B582C831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2245B4CCB898181EE32AC49D0FCC82C8 /* Pods-QuikCric-Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CB47CE0E1A8FBEC3C9ADA2C96E09F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D58657A52FF5AF73CBF71A988414F4 /* Pods-QuikCric.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric/Pods-QuikCric.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuikCric;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D35202513CFF64862588BF059EA1028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFF24055CD380BD4E97F329BAA2F53F /* Pods-QuikCric WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension/Pods-QuikCric WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuikCric_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		3A3DCA1253C20FCB58BAA51C4D9F3010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18116EC7AAE3A1647EDF829AFF7E3BCC /* Pods-QuikCric.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric/Pods-QuikCric.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuikCric;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A6009F4877A0AA498B9F71E4A859721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11EA5A50541F7860C9A1447CB9BBD0A /* Pods-QuikCric WatchKit Extension-Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire/Pods-QuikCric WatchKit Extension-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire/Pods-QuikCric WatchKit Extension-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5371B3D3B1FF63EBEB343B1574143112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		783EBFE89733E419500CDBA978F42EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150946AA3B100BB5C800F9F64B4901C4 /* Pods-QuikCric WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension/Pods-QuikCric WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuikCric_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		7BE4CFAEB721F3C9917B5549445FDA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1575F335F0104243271B357D8083DD65 /* Pods-QuikCric-SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A5489C157C28780146F91492313366E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1575F335F0104243271B357D8083DD65 /* Pods-QuikCric-SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric-SwiftyJSON/Pods-QuikCric-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A58B1820DF965C7AFF9618C37703B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2245B4CCB898181EE32AC49D0FCC82C8 /* Pods-QuikCric-Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric-Alamofire/Pods-QuikCric-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2CC84C3C8D12826BC4BCC8A2FEF29F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D1F30D524ED7724E83770DF29422A075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B11769E5E864245EECE72FA814BDFC1 /* Pods-QuikCric WatchKit Extension-SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON/Pods-QuikCric WatchKit Extension-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-SwiftyJSON/Pods-QuikCric WatchKit Extension-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		ED9178657DCCD2F80881E883F4F48A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11EA5A50541F7860C9A1447CB9BBD0A /* Pods-QuikCric WatchKit Extension-Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire/Pods-QuikCric WatchKit Extension-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuikCric WatchKit Extension-Alamofire/Pods-QuikCric WatchKit Extension-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B155A531EC0359F29E7ED1DCAF2BF8 /* Build configuration list for PBXNativeTarget "Pods-QuikCric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB47CE0E1A8FBEC3C9ADA2C96E09F33 /* Debug */,
+				3A3DCA1253C20FCB58BAA51C4D9F3010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1135A8FAF4AF4E53C65F703E10F6A5AD /* Build configuration list for PBXNativeTarget "Pods-QuikCric WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D35202513CFF64862588BF059EA1028 /* Debug */,
+				783EBFE89733E419500CDBA978F42EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CC84C3C8D12826BC4BCC8A2FEF29F2 /* Debug */,
+				5371B3D3B1FF63EBEB343B1574143112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30874FF41A7D6AE56D648F2E990F0592 /* Build configuration list for PBXNativeTarget "Pods-QuikCric-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58B1820DF965C7AFF9618C37703B2F8 /* Debug */,
+				0C935D4A540856040A57AA48B582C831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7248CFE38A0A8BC400BC1F74F972B0DC /* Build configuration list for PBXNativeTarget "Pods-QuikCric WatchKit Extension-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FBC4FC31E8FB1DF64E8A29ED84F3C6 /* Debug */,
+				D1F30D524ED7724E83770DF29422A075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A24937DF0B140A66F2D64DFFCF4147B /* Build configuration list for PBXNativeTarget "Pods-QuikCric-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5489C157C28780146F91492313366E /* Debug */,
+				7BE4CFAEB721F3C9917B5549445FDA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF8706A9777987857BC285DCED4D5D7 /* Build configuration list for PBXNativeTarget "Pods-QuikCric WatchKit Extension-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6009F4877A0AA498B9F71E4A859721 /* Debug */,
+				ED9178657DCCD2F80881E883F4F48A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

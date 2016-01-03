@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uVA-u7-fUT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Matches-->
+        <scene sceneID="C7K-Gt-kfZ">
+            <objects>
+                <controller title="Matches" id="uVA-u7-fUT" customClass="InterfaceController" customModule="QuikCric_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text=" Current" textAlignment="center" id="VSx-1r-6Uh">
+                            <color key="textColor" red="0.0" green="0.67914782070000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <table alignment="left" id="q6D-qH-Cuf">
+                            <items>
+                                <tableRow identifier="MatchRow" id="INw-Sg-0g6" customClass="MatchRow" customModule="QuikCric_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="Ya6-oT-5BH">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="cgW-rb-JZ6">
+                                                <color key="color" red="0.0" green="0.67914782070000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="hVe-RH-rrG">
+                                                <items>
+                                                    <label alignment="center" text="🇿🇦 SA v ENG 🇬🇬" textAlignment="center" id="Kvr-sA-D1W">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                                    </label>
+                                                    <label height="19.5" alignment="left" text="ENG 545/5" id="EiL-Ea-maS"/>
+                                                    <label alignment="left" text="Lead by 545" id="HMy-7P-W68"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="currentScore" destination="EiL-Ea-maS" id="534-NC-1Vv"/>
+                                        <outlet property="lead" destination="HMy-7P-W68" id="0ZM-hy-Ojd"/>
+                                        <outlet property="matchName" destination="Kvr-sA-D1W" id="xcb-2J-YzV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="left" text=" Recent" id="cNB-ur-I14">
+                            <color key="textColor" red="0.0" green="0.67914782070000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <table alignment="left" id="SXn-tw-83l">
+                            <items>
+                                <tableRow id="8zt-lv-oOE">
+                                    <group key="rootItem" width="1" alignment="left" id="FnX-kj-LNL"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="q6D-qH-Cuf" id="p3s-yu-xaJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="227" y="360"/>
+        </scene>
+        <!--showDetails-->
+        <scene sceneID="GZS-Pb-Wbp">
+            <objects>
+                <controller identifier="showDetails" id="jcB-1l-MUN" customClass="DetailInterfaceController" customModule="QuikCric_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="4Za-iG-UVf">
+                            <items>
+                                <label alignment="center" text="ENG 🇬🇬" id="RIN-2d-htg">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                </label>
+                                <label alignment="center" text="555/2 lead by 300" id="d4Q-8F-cSh">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="D0L-Qh-cKZ">
+                            <items>
+                                <tableRow identifier="DetailRow" id="rMV-ab-LmE" customClass="DetailRow" customModule="QuikCric_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="0.0" id="FBq-si-8tC">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="VCz-6C-UQi">
+                                                <color key="color" red="0.0" green="0.83380681818181812" blue="0.1866427256063532" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="2" id="Pdc-yV-fib">
+                                                <items>
+                                                    <label alignment="left" text="Stokes" textAlignment="left" id="Fff-2F-XFm">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                    <label alignment="left" verticalAlignment="bottom" text="50/2" textAlignment="left" id="qMf-nm-B0G">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="6" right="0.0" top="3" bottom="3"/>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="batsman" destination="Fff-2F-XFm" id="ldW-ai-in5"/>
+                                        <outlet property="score" destination="qMf-nm-B0G" id="poV-ux-ZLB"/>
+                                        <outlet property="separator" destination="VCz-6C-UQi" id="sKZ-xW-ebK"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="score" destination="d4Q-8F-cSh" id="En6-2L-HNz"/>
+                        <outlet property="table" destination="D0L-Qh-cKZ" id="xEq-ZW-fa6"/>
+                        <outlet property="team" destination="RIN-2d-htg" id="VgP-zp-PgK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="466" y="365"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="QuikCric_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
