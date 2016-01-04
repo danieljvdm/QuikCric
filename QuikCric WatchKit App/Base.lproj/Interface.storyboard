@@ -10,10 +10,6 @@
             <objects>
                 <controller title="Matches" id="uVA-u7-fUT" customClass="InterfaceController" customModule="QuikCric_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text=" Current" textAlignment="center" id="VSx-1r-6Uh">
-                            <color key="textColor" red="0.0" green="0.67914782070000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
-                        </label>
                         <table alignment="left" id="q6D-qH-Cuf">
                             <items>
                                 <tableRow identifier="MatchRow" id="INw-Sg-0g6" customClass="MatchRow" customModule="QuikCric_WatchKit_Extension">
@@ -41,18 +37,16 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <label alignment="left" text=" Recent" id="cNB-ur-I14">
-                            <color key="textColor" red="0.0" green="0.67914782070000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
-                        </label>
-                        <table alignment="left" id="SXn-tw-83l">
-                            <items>
-                                <tableRow id="8zt-lv-oOE">
-                                    <group key="rootItem" width="1" alignment="left" id="FnX-kj-LNL"/>
-                                </tableRow>
-                            </items>
-                        </table>
                     </items>
+                    <menu key="menu" id="c74-cD-bmJ">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="sDp-Kz-1tO">
+                                <connections>
+                                    <action selector="refresh" destination="uVA-u7-fUT" id="aaw-F7-pjS"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="tableView" destination="q6D-qH-Cuf" id="p3s-yu-xaJ"/>
                     </connections>
@@ -105,6 +99,15 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="9Yn-ps-m18">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="3Yq-XH-zA9">
+                                <connections>
+                                    <action selector="refresh" destination="jcB-1l-MUN" id="hwx-Pw-Zey"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="score" destination="d4Q-8F-cSh" id="En6-2L-HNz"/>
                         <outlet property="table" destination="D0L-Qh-cKZ" id="xEq-ZW-fa6"/>

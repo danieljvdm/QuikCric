@@ -16,13 +16,21 @@ class DetailInterfaceController: WKInterfaceController {
     @IBOutlet var score: WKInterfaceLabel!
     @IBOutlet var matchName: WKInterfaceLabel!
     @IBOutlet var table: WKInterfaceTable!
+    
+    var matchId = 0
         
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         let match = context as! Match
+        matchId = match.id
 
         self.setTitle(match.prettyName)
+        guard let currentInnings = match.innings.first else {
+            return
+        }
+        self.team.setText("\(TeamFlag.Country(currentInnings.battingTeamName).description) \(currentInnings.battingTeamName)")
+        self.score.setText("\(currentInnings.summary)")
         setupTable(match)
     }
     
@@ -48,7 +56,24 @@ class DetailInterfaceController: WKInterfaceController {
             }
         }
     }
+    
+    func loadData() {
+        APIService.query(QueryType.LiveMatches){
+            (matches: [Match]) in
+            for match in matches {
+                if match.id == self.matchId {
+                    self.matchId = match.id
+                    self.setupTable(match)
+                }
+                
+            }
+        }
+    }
 
+
+    @IBAction func refresh() {
+    }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

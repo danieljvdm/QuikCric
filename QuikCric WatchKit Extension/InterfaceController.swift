@@ -27,19 +27,27 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
-
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    
+    func loadData() {
         APIService.query(QueryType.LiveMatches){
             (matches: [Match]) in
             self.matches = matches
             self.setupTable()
         }
+    }
+
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
+        loadData()
         // Configure interface objects here.
     }
 
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         self.pushControllerWithName("showDetails", context: matches[rowIndex])
+    }
+    
+    @IBAction func refresh() {
+        loadData()
     }
     
     override func willActivate() {

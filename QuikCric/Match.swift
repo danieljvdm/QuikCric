@@ -92,6 +92,10 @@ struct Team {
             return "🇦🇺"
         case "WI":
             return "🇯🇲"
+        case "AFG":
+            return "🇦🇫"
+        case "ZIM":
+            return "🇿🇼"
         default:
             return ""
         }
@@ -109,6 +113,32 @@ struct Team {
     }
 }
 
+enum TeamFlag {
+    case Country(String)
+    
+    var description: String {
+        switch self {
+        case .Country(let country):
+            switch country {
+            case "SA":
+                return "🇿🇦"
+            case "ENG":
+                return "🇬🇬"
+            case "AUS":
+                return "🇦🇺"
+            case "WI":
+                return "🇯🇲"
+            case "AFG":
+                return "🇦🇫"
+            case "ZIM":
+                return "🇿🇼"
+            default:
+                return country
+            }
+        }
+    }
+}
+
 struct Player {
     let id: Int
     let name: String
@@ -118,7 +148,6 @@ struct Player {
     var lastName: String {
         var fullnamearr = name.componentsSeparatedByString(" ")
         fullnamearr.removeAtIndex(0)
-        print(fullnamearr)
         return fullnamearr.reduce(""){$0 == "" ? $1 : $0 + " " + $1}
     }
 }
@@ -144,6 +173,8 @@ struct Innings {
             return "SA"
         case 9:
             return "WI"
+        case 1188:
+            return "AFG"
         default:
             return String(battingTeam)
         }
@@ -154,6 +185,9 @@ struct Innings {
     let ru: String?
     var score: String {
         return "\(battingTeamName) \(runs) for \(wickets)"
+    }
+    var summary: String {
+        return "\(runs)/\(wickets) \(relativeScore)"
     }
     var scores = [Score]()
     var relativeScore: String {
