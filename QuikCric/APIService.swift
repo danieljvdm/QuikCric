@@ -40,7 +40,8 @@ class APIService {
             .responseJSON { response in
                 if let value = response.result.value {
                     var json = JSON(value)["query"]["results"]
-                    print(json.stringValue)
+                    guard json.isExists() else {return}
+                    try! Persistance.saveJSON(json)
                     if json["Scorecard"].isExists() {
                         json = json["Scorecard"]
                         let match = CurrentMatch(json: json)
