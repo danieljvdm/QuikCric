@@ -29,8 +29,9 @@
 		65261EDE1C38854600338B59 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65261EDD1C38854600338B59 /* DetailInterfaceController.swift */; };
 		65261EE11C396BFB00338B59 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65261EE01C396BFB00338B59 /* DetailRow.swift */; };
 		6538D0341C32C2F600B681EE /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6538D0331C32C2F600B681EE /* Match.swift */; };
-		65794BEA1C3DCB88005B0752 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65794BE91C3DCB88005B0752 /* Persistance.swift */; };
-		65E393ED1C3DDDA600B27F5B /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65794BE91C3DCB88005B0752 /* Persistance.swift */; };
+		65794BEA1C3DCB88005B0752 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65794BE91C3DCB88005B0752 /* PersistanceService.swift */; };
+		65E393ED1C3DDDA600B27F5B /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65794BE91C3DCB88005B0752 /* PersistanceService.swift */; };
+		65FBBD4E1C3EC6FA006B182C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FBBD4D1C3EC6FA006B182C /* NotificationService.swift */; };
 		95C4CEC584D6A16EDF6C16A5 /* Pods_QuikCric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E17D80F3FE5E6EC7D7B80B /* Pods_QuikCric.framework */; };
 		C89BAA1B5A216A004A5A03B6 /* Pods_QuikCric_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2095A2A913BBEC3BCEDD26 /* Pods_QuikCric_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
@@ -123,7 +124,8 @@
 		65261EDD1C38854600338B59 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		65261EE01C396BFB00338B59 /* DetailRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
 		6538D0331C32C2F600B681EE /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		65794BE91C3DCB88005B0752 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		65794BE91C3DCB88005B0752 /* PersistanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		65FBBD4D1C3EC6FA006B182C /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		727CE22324F429C1AD00DA41 /* Pods-QuikCric WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuikCric WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuikCric WatchKit Extension/Pods-QuikCric WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		C80262E2704D316731DA03D3 /* Pods-QuikCric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuikCric.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuikCric/Pods-QuikCric.release.xcconfig"; sourceTree = "<group>"; };
 		E0E17D80F3FE5E6EC7D7B80B /* Pods_QuikCric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuikCric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,14 +214,13 @@
 			isa = PBXGroup;
 			children = (
 				6538D0321C32C25D00B681EE /* Data */,
+				65FBBD4C1C3EC58E006B182C /* Services */,
 				650529A71C319E3000BD47D8 /* AppDelegate.swift */,
 				650529A91C319E3000BD47D8 /* ViewController.swift */,
 				650529AB1C319E3000BD47D8 /* Main.storyboard */,
 				650529AE1C319E3000BD47D8 /* Assets.xcassets */,
 				650529B01C319E3000BD47D8 /* LaunchScreen.storyboard */,
 				650529B31C319E3000BD47D8 /* Info.plist */,
-				65052A001C31A11B00BD47D8 /* APIService.swift */,
-				65794BE91C3DCB88005B0752 /* Persistance.swift */,
 			);
 			path = QuikCric;
 			sourceTree = "<group>";
@@ -290,6 +291,16 @@
 				6538D0331C32C2F600B681EE /* Match.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		65FBBD4C1C3EC58E006B182C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65794BE91C3DCB88005B0752 /* PersistanceService.swift */,
+				65052A001C31A11B00BD47D8 /* APIService.swift */,
+				65FBBD4D1C3EC6FA006B182C /* NotificationService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		8FEED884B86E6500D198E49E /* Frameworks */ = {
@@ -596,7 +607,8 @@
 				650529AA1C319E3000BD47D8 /* ViewController.swift in Sources */,
 				65052A011C31A11B00BD47D8 /* APIService.swift in Sources */,
 				650529A81C319E3000BD47D8 /* AppDelegate.swift in Sources */,
-				65794BEA1C3DCB88005B0752 /* Persistance.swift in Sources */,
+				65794BEA1C3DCB88005B0752 /* PersistanceService.swift in Sources */,
+				65FBBD4E1C3EC6FA006B182C /* NotificationService.swift in Sources */,
 				6538D0341C32C2F600B681EE /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,7 +638,7 @@
 				6525733E1C38540E00A61107 /* MatchRow.swift in Sources */,
 				6525733B1C38396C00A61107 /* APIService.swift in Sources */,
 				6525733C1C38397100A61107 /* Match.swift in Sources */,
-				65E393ED1C3DDDA600B27F5B /* Persistance.swift in Sources */,
+				65E393ED1C3DDDA600B27F5B /* PersistanceService.swift in Sources */,
 				65261EE11C396BFB00338B59 /* DetailRow.swift in Sources */,
 				650529E31C319E3000BD47D8 /* InterfaceController.swift in Sources */,
 				65261EDE1C38854600338B59 /* DetailInterfaceController.swift in Sources */,

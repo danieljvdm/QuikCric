@@ -37,6 +37,7 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <label alignment="center" verticalAlignment="center" text="No Current Matches!" numberOfLines="2" id="gI2-tn-q3b"/>
                     </items>
                     <menu key="menu" id="c74-cD-bmJ">
                         <items>
@@ -48,6 +49,7 @@
                         </items>
                     </menu>
                     <connections>
+                        <outlet property="noMatchesLabel" destination="gI2-tn-q3b" id="rf0-Fq-sBZ"/>
                         <outlet property="tableView" destination="q6D-qH-Cuf" id="p3s-yu-xaJ"/>
                     </connections>
                 </controller>

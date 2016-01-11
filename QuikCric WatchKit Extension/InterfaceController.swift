@@ -15,6 +15,7 @@ class InterfaceController: WKInterfaceController {
     var matches = [Match]()
     
     @IBOutlet var tableView: WKInterfaceTable!
+    @IBOutlet var noMatchesLabel: WKInterfaceLabel!
     
     func setupTable() {
         tableView.setNumberOfRows(matches.count, withRowType: "MatchRow")
@@ -30,9 +31,13 @@ class InterfaceController: WKInterfaceController {
     
     func loadData() {
         APIService.query(QueryType.LiveMatches){
-            (matches: [Match]) in
-            self.matches = matches
-            self.setupTable()
+            (matches: [Match]?) in
+            if let matches = matches {
+                self.matches = matches
+                self.setupTable()
+            } else {
+                self.noMatchesLabel.setHidden(false)
+            }
         }
     }
 

@@ -31,7 +31,7 @@ class APIService {
     static let prefix = "http://query.yahooapis.com/v1/public/yql?q="
     static let suffix = "&format=json&diagnostics=true&env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0&callback="
 
-    class func query(statement: QueryType, completion: (matches: [Match]) -> Void) {
+    class func query(statement: QueryType, completion: (matches: [Match]?) -> Void) {
         
         let query = prefix + statement.description.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())! + suffix
         var matches = [Match]()
@@ -40,8 +40,12 @@ class APIService {
             .responseJSON { response in
                 if let value = response.result.value {
                     var json = JSON(value)["query"]["results"]
-                    guard json.isExists() else {return}
-                    try! Persistance.saveJSON(json)
+                    guard json.null == nil else {
+                        completion(matches: nil)
+                        return
+                    }
+
+                    try! PersistanceService.saveJSON(json)
                     if json["Scorecard"].isExists() {
                         json = json["Scorecard"]
                         let match = CurrentMatch(json: json)
@@ -52,6 +56,8 @@ class APIService {
                             matches.append(match)
                         }
                     }
+                    
+                    try! print("Retrieved JSON: \(PersistanceService.retrieveJSON())")
                     
                     completion(matches: matches)
                 }

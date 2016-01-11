@@ -59,7 +59,12 @@ class DetailInterfaceController: WKInterfaceController {
     
     func loadData() {
         APIService.query(QueryType.LiveMatches){
-            (matches: [Match]) in
+            (matches: [Match]?) in
+            guard let matches = matches else {
+                //TODO: Show completed match here
+                return
+            }
+            
             for match in matches {
                 if match.id == self.matchId {
                     self.matchId = match.id
@@ -69,7 +74,6 @@ class DetailInterfaceController: WKInterfaceController {
             }
         }
     }
-
 
     @IBAction func refresh() {
     }

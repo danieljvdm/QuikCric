@@ -40,7 +40,26 @@ extension Match {
         let test = squad1 + squad2
         return test
     }
+    
+    func compareWith(oldMatch: Match) {
+        //Check for new wickets
+        let wickets1 = self.innings[0].wickets, wickets2 = oldMatch.innings[0].wickets
+        if wickets1 > wickets2 {
+            for (index, score) in self.innings[0].scores.enumerate() {
+                if !oldMatch.innings[0].scores[index].out && score.out {
+                    //new wicket
+                }
+                
+                if !oldMatch.innings[0].scores[index].runs < 100 && score.runs => 100 {
+                    //GRATS ON THE CENTURY BRAH
+                }
+            }
+        }
+    }
 }
+
+
+
 
 class CurrentMatch : Match {
     let id: Int
@@ -60,16 +79,12 @@ class CurrentMatch : Match {
         }
         if let _ = json["past_ings"].array {
             for (_, subJson) in json["past_ings"] {
-                innings.append(Innings(json: subJson))
+                innings.append(Innings(json: subJson, teams: teams))
             }
         }
         else if let _ = json["past_ings"].dictionary {
             innings.append(Innings(json: json["past_ings"]))
         }
-        
-        
-
-        
     }
 }
 
@@ -203,8 +218,8 @@ struct Innings {
         
         return ""
     }
-    
-    init(json: JSON){
+
+    init(json: JSON, teams: [Team]){
         number = json["s"]["i"].intValue
         battingTeam = json["s"]["a"]["i"].intValue
         runs = json["s"]["a"]["r"].intValue
@@ -216,23 +231,31 @@ struct Innings {
             guard let _ = subJson["c"].string else {
                 continue
             }
-            scores.append(Score(json: subJson))
+            scores.append(Score(json: subJson, teams: teams))
         }
     }
 }
 
 struct Score {
     let batsmanId: Int
+    let batsmanName: String
     let runs: Int
     let balls: Int
     let strikeRate: Double
     let out: Bool
     
-    init(json: JSON){
+    init(json: JSON, teams: [Team]){
         batsmanId = json["i"].intValue
         runs = json["r"].intValue
         balls = json["b"].intValue
         strikeRate = json["sr"].doubleValue
+        let players = teams[0].squad + teams[1].squad
+        for player in players {
+            if player.id == batsmanId {
+                self.batsmanName = player.lastName
+                break
+            }
+        }
         if let _ = json["dt"].string {
             out = true
         } else {

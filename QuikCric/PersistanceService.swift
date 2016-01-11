@@ -9,15 +9,17 @@
 import Foundation
 import SwiftyJSON
 
+typealias `Self` = PersistanceService
+
 enum PersistanceError: ErrorType {
     case EmptyJSON
     case WriteError
     case ReadError
 }
 
-class Persistance {
+class PersistanceService {
     
-    private static let filename = Persistance.getDocumentsDirectory().stringByAppendingPathComponent("data.txt")
+    private static let filename = Self.getDocumentsDirectory().stringByAppendingPathComponent("data.txt")
     
     class func saveJSON(json: JSON) throws {
         guard let str = json.rawString() else {throw PersistanceError.EmptyJSON}

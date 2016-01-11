@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         APIService.query(QueryType.LiveMatches){
-            (matches: [Match]) in
+            (matches: [Match]?) in
+            guard let matches = matches else {return}
             for case let match as CurrentMatch in matches {
                 print(match.name)
                 for inning in match.innings {
