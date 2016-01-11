@@ -30,13 +30,30 @@ class PersistanceService {
         }
     }
     
-    class func retrieveJSON() throws -> JSON {
+    class func retrieveSavedMatches() throws -> [Match] {
+        var matches = [Match]()
+
         do {
             let jsonString = try String(contentsOfFile: filename)
-            return JSON(jsonString)
+            var json = JSON(jsonString)
+            
+            if json["Scorecard"].isExists() {
+                json = json["Scorecard"]
+                let match = CurrentMatch(json: json)
+                matches.append(match)
+                return matches
+            } else {
+                for (_, subJson):(String, JSON) in json { //if there's more than 1 match we need to use ["Scorecard"]
+                    let match = CurrentMatch(json: subJson)
+                    matches.append(match)
+                    return matches
+                }
+            }
         } catch {
             throw PersistanceError.ReadError
         }
+        
+        return matches
     }
     
     class func getDocumentsDirectory() -> NSString {

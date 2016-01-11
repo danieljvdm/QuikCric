@@ -30,6 +30,7 @@
 		65261EE11C396BFB00338B59 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65261EE01C396BFB00338B59 /* DetailRow.swift */; };
 		6538D0341C32C2F600B681EE /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6538D0331C32C2F600B681EE /* Match.swift */; };
 		65794BEA1C3DCB88005B0752 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65794BE91C3DCB88005B0752 /* PersistanceService.swift */; };
+		658D95661C43CFCF005CB5D3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FBBD4D1C3EC6FA006B182C /* NotificationService.swift */; };
 		65E393ED1C3DDDA600B27F5B /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65794BE91C3DCB88005B0752 /* PersistanceService.swift */; };
 		65FBBD4E1C3EC6FA006B182C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FBBD4D1C3EC6FA006B182C /* NotificationService.swift */; };
 		95C4CEC584D6A16EDF6C16A5 /* Pods_QuikCric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E17D80F3FE5E6EC7D7B80B /* Pods_QuikCric.framework */; };
@@ -423,6 +424,11 @@
 				TargetAttributes = {
 					650529A31C319E3000BD47D8 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					650529B71C319E3000BD47D8 = {
 						CreatedOnToolsVersion = 7.2;
@@ -641,6 +647,7 @@
 				65E393ED1C3DDDA600B27F5B /* PersistanceService.swift in Sources */,
 				65261EE11C396BFB00338B59 /* DetailRow.swift in Sources */,
 				650529E31C319E3000BD47D8 /* InterfaceController.swift in Sources */,
+				658D95661C43CFCF005CB5D3 /* NotificationService.swift in Sources */,
 				65261EDE1C38854600338B59 /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

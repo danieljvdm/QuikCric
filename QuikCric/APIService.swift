@@ -45,7 +45,6 @@ class APIService {
                         return
                     }
 
-                    try! PersistanceService.saveJSON(json)
                     if json["Scorecard"].isExists() {
                         json = json["Scorecard"]
                         let match = CurrentMatch(json: json)
@@ -57,8 +56,7 @@ class APIService {
                         }
                     }
                     
-                    try! print("Retrieved JSON: \(PersistanceService.retrieveJSON())")
-                    
+                    try! PersistanceService.saveJSON(json)
                     completion(matches: matches)
                 }
         }

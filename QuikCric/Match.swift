@@ -47,10 +47,12 @@ extension Match {
         if wickets1 > wickets2 {
             for (index, score) in self.innings[0].scores.enumerate() {
                 if !oldMatch.innings[0].scores[index].out && score.out {
+                    NotificationService.sendWicketNotification(score)
                     //new wicket
                 }
                 
-                if !oldMatch.innings[0].scores[index].runs < 100 && score.runs => 100 {
+                if oldMatch.innings[0].scores[index].runs < 100 && score.runs >= 100 {
+                    NotificationService.sendRunNotification(score)
                     //GRATS ON THE CENTURY BRAH
                 }
             }
@@ -83,7 +85,7 @@ class CurrentMatch : Match {
             }
         }
         else if let _ = json["past_ings"].dictionary {
-            innings.append(Innings(json: json["past_ings"]))
+            innings.append(Innings(json: json["past_ings"], teams: teams))
         }
     }
 }
@@ -238,7 +240,7 @@ struct Innings {
 
 struct Score {
     let batsmanId: Int
-    let batsmanName: String
+    var batsmanName: String?
     let runs: Int
     let balls: Int
     let strikeRate: Double

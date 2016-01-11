@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound], categories: nil))
+        application.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
         // Override point for customization after application launch.
         return true
+    }
+    
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        do {
+            let oldMatches = try PersistanceService.retrieveSavedMatches()
+            APIService.query(QueryType.LiveMatches) { (matches: [Match]?) in
+                guard let matches = matches else {completionHandler(UIBackgroundFetchResult.NoData); return}
+                for match in oldMatches {
+                    for match2 in matches {
+                        if match.id == match2.id {
+                            match2.compareWith(match)
+                        }
+                    }
+                }
+                
+            }
+        } catch PersistanceError.ReadError {
+            print("Couldn't read JSON")
+            return
+        } catch {
+            print("Error")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
