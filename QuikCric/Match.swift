@@ -41,27 +41,26 @@ extension Match {
         return test
     }
     
-    func compareWith(oldMatch: Match) {
+    func compareWitha(oldMatch: Match) {
         //Check for new wickets
         let wickets1 = self.innings[0].wickets, wickets2 = oldMatch.innings[0].wickets
+        print("\(wickets1) + \(wickets2)")
+        print("test")
         if wickets1 > wickets2 {
             for (index, score) in self.innings[0].scores.enumerate() {
                 if !oldMatch.innings[0].scores[index].out && score.out {
-                    NotificationService.sendWicketNotification(score)
+                    print("new wicket")
                     //new wicket
                 }
                 
                 if oldMatch.innings[0].scores[index].runs < 100 && score.runs >= 100 {
-                    NotificationService.sendRunNotification(score)
+                    print("century")
                     //GRATS ON THE CENTURY BRAH
                 }
             }
         }
     }
 }
-
-
-
 
 class CurrentMatch : Match {
     let id: Int
@@ -100,22 +99,7 @@ struct Team {
     let shortName: String
     var squad = [Player]()
     var flag: String {
-        switch shortName {
-        case "SA":
-            return "🇿🇦"
-        case "ENG":
-            return "🇬🇬"
-        case "AUS":
-            return "🇦🇺"
-        case "WI":
-            return "🇯🇲"
-        case "AFG":
-            return "🇦🇫"
-        case "ZIM":
-            return "🇿🇼"
-        default:
-            return ""
-        }
+        return TeamFlag.Country(shortName).description
     }
     
     init(json: JSON){
@@ -130,7 +114,7 @@ struct Team {
     }
 }
 
-enum TeamFlag {
+enum TeamFlag: CustomStringConvertible {
     case Country(String)
     
     var description: String {
@@ -149,6 +133,8 @@ enum TeamFlag {
                 return "🇦🇫"
             case "ZIM":
                 return "🇿🇼"
+            case "BAN":
+                return "🇧🇩"
             default:
                 return country
             }
@@ -177,7 +163,7 @@ struct Innings {
         case 1:
             return "AUS"
         case 2:
-            return "2"
+            return "BAN"
         case 3:
             return "ENG"
         case 4:

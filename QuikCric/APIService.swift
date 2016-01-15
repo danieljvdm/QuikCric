@@ -40,20 +40,23 @@ class APIService {
             .responseJSON { response in
                 if let value = response.result.value {
                     var json = JSON(value)["query"]["results"]
+                    
                     guard json.null == nil else {
                         completion(matches: nil)
                         return
                     }
-
+                    
                     if json["Scorecard"].isExists() {
                         json = json["Scorecard"]
                         let match = CurrentMatch(json: json)
                         matches.append(match)
+//                        for (_, subJson):(String, JSON) in json { //if there's more than 1 match we need to use ["Scorecard"]
+//                            let match = CurrentMatch(json: subJson)
+//                            matches.append(match)
+//                        }
                     } else {
-                        for (_, subJson):(String, JSON) in json { //if there's more than 1 match we need to use ["Scorecard"]
-                            let match = CurrentMatch(json: subJson)
-                            matches.append(match)
-                        }
+                        let match = CurrentMatch(json: json)
+                        matches.append(match)
                     }
                     
                     try! PersistanceService.saveJSON(json)

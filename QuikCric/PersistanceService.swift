@@ -35,25 +35,31 @@ class PersistanceService {
 
         do {
             let jsonString = try String(contentsOfFile: filename)
-            var json = JSON(jsonString)
-            
-            if json["Scorecard"].isExists() {
-                json = json["Scorecard"]
+            if let dataFromString = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                let json = JSON(data: dataFromString)
                 let match = CurrentMatch(json: json)
                 matches.append(match)
-                return matches
-            } else {
-                for (_, subJson):(String, JSON) in json { //if there's more than 1 match we need to use ["Scorecard"]
-                    let match = CurrentMatch(json: subJson)
-                    matches.append(match)
-                    return matches
-                }
             }
+            
+            return matches
+
+//            if !json["Scorecard"].isExists() {
+//                print(json)
+//                let match = CurrentMatch(json: json)
+//                print(match)
+//                matches.append(match)
+//                return matches
+//            } else {
+//                print("test")
+//                for (_, subJson):(String, JSON) in json { //if there's more than 1 match we need to use ["Scorecard"]
+//                    let match = CurrentMatch(json: subJson)
+//                    matches.append(match)
+//                    return matches
+//                }
+//            }
         } catch {
             throw PersistanceError.ReadError
         }
-        
-        return matches
     }
     
     class func getDocumentsDirectory() -> NSString {

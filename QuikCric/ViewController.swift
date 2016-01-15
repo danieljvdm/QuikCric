@@ -11,23 +11,20 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
-    let letters = "acdegilmnoprstuw"
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         APIService.query(QueryType.LiveMatches){
             (matches: [Match]?) in
-            guard let matches = matches else {return}
-            for case let match as CurrentMatch in matches {
-                print(match.name)
-                for inning in match.innings {
-                    print(inning.score)
+            if let matches = matches {
+                for case let match as CurrentMatch in matches {
+                    print(match.name)
+                    for inning in match.innings {
+                        print(inning.score)
+                    }
                 }
-                //print(match.name)
-                //print(match.innings)
             }
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
