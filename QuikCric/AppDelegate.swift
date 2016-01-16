@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound], categories: nil))
-        application.setMinimumBackgroundFetchInterval(60.0)
+        application.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
         return true
     }
     
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             let oldMatches = try PersistanceService.retrieveSavedMatches()
             APIService.query(QueryType.LiveMatches) { (matches: [Match]?) in
-                guard let matches = matches else {completionHandler(UIBackgroundFetchResult.NoData); return}
+                guard let matches = matches else {completionHandler(.NoData); return}
                 for match in oldMatches {
                     for match2 in matches {
                         if match.id == match2.id {
@@ -34,12 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
                 
+                completionHandler(.NewData)
+                
             }
-        } catch PersistanceError.ReadError {
-            print("Couldn't read JSON")
-            return
         } catch {
-            print("Error")
+           completionHandler(.Failed)
         }
     }
 
