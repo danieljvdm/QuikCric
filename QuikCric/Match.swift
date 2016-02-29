@@ -41,6 +41,7 @@ extension Match {
         return test
     }
     
+
     func compareWitha(oldMatch: Match) {
         //Check for new wickets
         let wickets1 = self.innings[0].wickets, wickets2 = oldMatch.innings[0].wickets
@@ -89,7 +90,8 @@ class CurrentMatch : Match {
     }
 }
 
-//struct PastMatch: Match {
+// TODO:
+//class PastMatch: Match {
 //    
 //}
 

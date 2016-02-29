@@ -10,14 +10,17 @@ import Foundation
 import UIKit
 
 class NotificationService {
+    // FIXME:
     class func sendRunNotification(score: Score) -> () {
         let notification = UILocalNotification()
+        // FIXME:
         notification.alertTitle = score.runs >= 100 ? "Century!" : "Fifty!"
         notification.alertBody = "\(score.batsmanName!) \(score.runs)(\(score.balls))"
         notification.soundName = UILocalNotificationDefaultSoundName // play default sound
         UIApplication.sharedApplication().presentLocalNotificationNow(notification)
     }
     
+    // TODO:
     class func sendWicketNotification(score: Score) -> () {
         let notification = UILocalNotification()
         notification.alertTitle = "Wicket!"
